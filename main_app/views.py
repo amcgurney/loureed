@@ -9,6 +9,9 @@ from django.views.generic.base import TemplateView
 class Home(TemplateView):
     template_name = "home.html"
 
+class About(TemplateView):
+    template_name = "about.html"
+
     # Here we are adding a method that will be ran when we are dealing with a GET request
     def get(self, request):
         # Here we are returning a generic response
@@ -18,4 +21,4 @@ class Home(TemplateView):
 class About(View):
 
     def get(self, request):
-        return HttpResponse("Spotify About")
+        return HttpResponse("Lou Reed About")
