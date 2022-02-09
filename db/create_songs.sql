@@ -12,12 +12,12 @@ INSERT INTO main_app_songs(name, img, bio)
 
 INSERT INTO main_app_songs(name, img, bio)
   VALUES
-    ('', '', '');
+    ('Sweet Jane', 'https://hips.hearstapps.com/esq.h-cdn.co/assets/cm/15/06/54d1ede2a7224_-_esq-102813-lou-reed-2.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.');
 
 INSERT INTO main_app_songs(name, img, bio)
   VALUES
-    ('', '', '');
+    ('Who Loves the Sun', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2kK3FJ1himO2W1f0rzpaSGCuOot8Uq85hjlPNxijX4nYhDafCff6dOe1EK0G7ebSB8z4&usqp=CAU', 'Sed varius in sem convallis rutrum.');
 
 INSERT INTO main_app_songs(name, img, bio)
   VALUES
-    ('', '', '');
+    ('Oh! Sweet Nuthin', 'https://media2.fdncms.com/chicago/imager/the-gift-that-keeps-on-killing/u/original/5173973/1323674636-1292527554-600full-the-velvet-underground.jpg', 'Curabitur ut ultrices neque.');
