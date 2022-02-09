@@ -22,3 +22,10 @@ class About(View):
 
     def get(self, request):
         return HttpResponse("Lou Reed About")
+
+songs = [
+  Song("Sweet Jane", "https://hips.hearstapps.com/esq.h-cdn.co/assets/cm/15/06/54d1ede2a7224_-_esq-102813-lou-reed-2.jpg",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit."),
+  Song("Who Loves the Sun", "https://variety.com/wp-content/uploads/2019/10/2019_1599_004-e1572475947414.jpg?w=681&h=383&crop=1", "Sed varius in sem convallis rutrum."),
+  Song("Oh! Sweet Nuthin'", "https://www.telegraph.co.uk/content/dam/books/2017/12/28/TELEMMGLPICT000149622020_trans_NvBQzQNjv4BqplGOf-dgG3z4gg9owgQTXDVXE4-NcPVfcZy5a1cUJ04.jpeg?imwidth=680", "Curabitur ut ultrices neque."),
+]
