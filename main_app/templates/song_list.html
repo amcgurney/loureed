@@ -14,6 +14,7 @@
   </div>
   <!--  This anchor tag will redirect back to artist list without a query param -->
   <a class="button is-dark" href="{% url 'song_list' %}">Clear Search</a>
+  <a class="button is-dark" href="{% url 'song_create' %}">Add Song</a>
 </form>
 <div class="gallery">
   {% for song in songs %}
