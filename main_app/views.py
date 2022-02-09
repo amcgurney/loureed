@@ -1,5 +1,5 @@
 # This will import the class we are extending 
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView
 
 from django.shortcuts import render
 from django.views import View # <- View class to handle requests
@@ -47,3 +47,9 @@ class SongCreate(CreateView):
 class SongDetail(DetailView):
     model = Songs
     template_name = "song_detail.html"
+
+class SongUpdate(UpdateView):
+    model = Songs
+    fields = ['name', 'img', 'bio']
+    template_name = "song_update.html"
+    success_url = "/artists/"
