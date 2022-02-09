@@ -26,9 +26,7 @@ class About(View):
     def get(self, request):
         return HttpResponse("Lou Reed About")
 
-songs = [
-  
-]
+# songs = []
 
 class SongList(TemplateView):
     template_name = "song_list.html"
@@ -36,6 +34,7 @@ class SongList(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["songs"] = Songs.objects.all() # this is where we add the key into our context object for the view to use
+        context["header"] = "Trending Songs"
         return context
 
 class SongCreate(CreateView):
