@@ -6,5 +6,6 @@ urlpatterns = [
     path('', views.Home.as_view(), name="home"),
     path('about/', views.About.as_view(), name="about"), # <- new route
     path('songs/', views.SongList.as_view(), name="song_list"),
-    path('songs/new/', views.SongCreate.as_view(), name="song_create")
+    path('songs/new/', views.SongCreate.as_view(), name="song_create"),
+    path('songs/<int:pk>/', views.SongDetail.as_view(), name="song_detail")
 ]

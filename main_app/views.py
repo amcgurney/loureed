@@ -7,6 +7,7 @@ from django.http import HttpResponse # <- a class to handle sending a type of re
 from django.views.generic.base import TemplateView
 from .models import Songs
 # Create your views here.
+from django.views.generic import DetailView
 
 # Here we will be creating a class called Home and extending it from the View class
 class Home(TemplateView):
@@ -42,3 +43,7 @@ class SongCreate(CreateView):
     fields = ['name', 'img', 'bio']
     template_name = "song_create.html"
     success_url = "/songs/"
+
+class SongDetail(DetailView):
+    model = Songs
+    template_name = "song_detail.html"
