@@ -1,5 +1,6 @@
 # This will import the class we are extending 
-from django.views.generic.edit import CreateView, UpdateView
+from pyexpat import model
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 
 from django.shortcuts import render
 from django.views import View # <- View class to handle requests
@@ -52,4 +53,9 @@ class SongUpdate(UpdateView):
     model = Songs
     fields = ['name', 'img', 'bio']
     template_name = "song_update.html"
-    success_url = "/artists/"
+    success_url = "/songs/"
+
+class SongDelete(DeleteView):
+    model = Songs
+    template_name = "song_delete_confirmation.html"
+    success_url = "/songs/"
