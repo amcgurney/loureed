@@ -16,19 +16,7 @@ class Home(TemplateView):
 
 class About(TemplateView):
     template_name = "about.html"
-
-    # Here we are adding a method that will be ran when we are dealing with a GET request
-    def get(self, request):
-        # Here we are returning a generic response
-        # This is similar to response.send() in express
-        return HttpResponse("Lou Reed Home")
-
-class About(View):
-
-    def get(self, request):
-        return HttpResponse("Lou Reed About")
-
-# songs = []
+    
 
 class SongList(TemplateView):
     template_name = "song_list.html"

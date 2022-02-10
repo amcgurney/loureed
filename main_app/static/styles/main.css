@@ -36,7 +36,9 @@ body {
   }
   
   p {
-    font-size: 12px;
+    font-size: 16px;
+    font-style: oblique;
+    color: #ffffff;
   }
   
   .detail__img {
@@ -61,6 +63,7 @@ body {
   }
   
   img {
+    /* mask-repeat: round; */
     width: 100%;
     height: 500px;
     object-fit: cover;
@@ -75,4 +78,8 @@ body {
   
   .detail__container {
     margin-top: 500px;
+  }
+
+  .p {
+    color: antiquewhite;
   }

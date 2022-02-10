@@ -21,3 +21,15 @@ INSERT INTO main_app_songs(name, img, bio)
 INSERT INTO main_app_songs(name, img, bio)
   VALUES
     ('Oh! Sweet Nuthin', 'https://media2.fdncms.com/chicago/imager/the-gift-that-keeps-on-killing/u/original/5173973/1323674636-1292527554-600full-the-velvet-underground.jpg', 'Curabitur ut ultrices neque.');
+
+INSERT INTO main_app_songs(name, img, bio)
+  VALUES
+    ('Walk on the Wild Side', 'https://assets.catawiki.nl/assets/2018/2/26/3/3/f/33fec9ea-eff6-4a17-a86f-b7d47072fdb8.jpg', 'Duis pharetra nunc sit amet sem fermentum, at porttitor est sagittis.');
+
+INSERT INTO main_app_songs(name, img, bio)
+  VALUES
+    ('Sister Ray', 'https://i0.wp.com/itsthewonderlist.com/wp-content/uploads/2020/07/The-Velvet-Underground-self-titled-album-cover-web-optimised-1000-820x600-1.jpg?resize=820%2C600&ssl=1', 'Pellentesque sed dictum leo, nec consequat enim.');
+
+INSERT INTO main_app_songs(name, img, bio)
+  VALUES
+    ('Im Sticking with You', 'http://upload.wikimedia.org/wikipedia/commons/b/b1/Velvet_Underground_1968_by_Billy_Name.png', 'Sed in condimentum nisl. Nullam faucibus faucibus venenatis.');
